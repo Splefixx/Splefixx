@@ -12,7 +12,7 @@ canvas.height = window.innerHeight*0.3;
 ctx.beginPath();
 
 ctx.fillStyle = 'red';
-ctx.font = 'bold ' + canvas.height * 0.5 + 'px sans-serif'
+ctx.font = 'bold ' + canvas.height * 0.5 + 'px fredoka-one'
 ctx.textBaseline = 'middle';
 ctx.textAlign = 'center';
 
@@ -28,7 +28,7 @@ const data = pixelDataObj.data;
 
 //let prevIndexPoint = -4
 
-let dotSpacing = 4;
+let dotSpacing = 1;
 let prevX = -300;
 let prevY = -300;
 for (let y = 0; y < canvas.height; ++y)

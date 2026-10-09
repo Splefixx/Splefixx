@@ -1,4 +1,6 @@
-const canvas = document.getElementById('TitleCanvas');
+function init()
+{
+    const canvas = document.getElementById('TitleCanvas');
 
 const ctx = canvas.getContext('2d');
 
@@ -207,3 +209,10 @@ function animate() {
 }
 
 animate();
+}
+
+init();
+
+window.addEventListener('resize', function() {
+    init();
+});

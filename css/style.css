@@ -1,25 +1,43 @@
-<!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Splefix Portfolio</title>
-  </head>
-  <body>
-    <canvas id="TitleCanvas" width="800" height="600"></canvas>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <div id="postcontainer">
-        <div class="video">
-            <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Messing around with some visual-based front-end code !
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(14, 14, 14);
+    overflow-y: auto;
 
-Let me know of some cool skills you'd like to see! ❤️‍🔥
-(Learning the visual VFX side of things, this is attempt 1) 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
-#robloxartㅤ #robloxㅤ #robloxdev https://t.co/GGVw8JhkpW</p>&mdash; Splefix (@SplefixDev) <a href="https://x.com/SplefixDev/status/2108302604875046991?ref_src=twsrc%5Etfw">October 8, 2026</a></blockquote>
-<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
-        </div>
-    </div>
-    
-  </body>
-</html>
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#TitleCanvas {
+    display: block;
+    width: 100vw;
+    height: 30vh;
+}
+
+#postcontainer {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.video {
+    display: flex;
+    flex: 0 0 150px;
+    padding: 10px;
+    height: 100%;
+}
+
+.video twitter-tweet {
+    width: 100% !important;
+    height: 100% !important;
+}
